@@ -51,7 +51,7 @@ Temuan utama: usia saja lemah menjelaskan biaya, sedangkan status merokok (`smok
 - Evaluasi: MAE, RMSE, R², plot residual, Q-Q plot, dan pemeriksaan outlier.
 
 ## Cara Menjalankan
-1. Buka `notebooks/Tugas_Regresi_Linear_Asuransi.ipynb` di Google Colab (File > Upload notebook).
+1. Buka `notebook/Tugas_Regresi_Linear_Asuransi.ipynb` di Google Colab (File > Upload notebook).
 2. Pilih Runtime > Run all.
 3. Lokal: `pip install -r requirements.txt`, lalu jalankan notebook dengan Jupyter.
 
