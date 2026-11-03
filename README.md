@@ -16,6 +16,8 @@ Membandingkan regresi linear sederhana (SLR) dan regresi linear berganda (MLR) u
 
 Temuan utama: usia saja lemah menjelaskan biaya, sedangkan status merokok (`smoker_yes`) memiliki koefisien terbesar (sekitar +23.651 USD dengan prediktor lain tetap). Koefisien menunjukkan asosiasi, bukan sebab-akibat.
 
+Uji asumsi: multikolinearitas (VIF maksimum 1,61) dan autokorelasi (Durbin-Watson 2,12) terpenuhi, sedangkan normalitas error dan homoskedastisitas tidak terpenuhi. Prediksi tetap berguna, tetapi nilai-p dan selang kepercayaan koefisien perlu dibaca hati-hati.
+
 ## Struktur Repo
 ```
 .
@@ -49,6 +51,8 @@ Temuan utama: usia saja lemah menjelaskan biaya, sedangkan status merokok (`smok
 - SLR: `charges ~ age` dengan `LinearRegression`.
 - MLR: enam prediktor, `OneHotEncoder(drop="first")` dalam `Pipeline`. Kategori referensi: `smoker=no`, `sex=female`, `region=northeast`.
 - Evaluasi: MAE, RMSE, R², plot residual, Q-Q plot, dan pemeriksaan outlier.
+- Eksplorasi: heatmap korelasi antar variabel.
+- Uji asumsi MLR: Q-Q plot dan Shapiro-Wilk (normalitas), residual vs fitted (homoskedastisitas), VIF (multikolinearitas), dan Durbin-Watson (autokorelasi).
 
 ## Cara Menjalankan
 1. Buka `notebook/Tugas_Regresi_Linear_Asuransi.ipynb` di Google Colab (File > Upload notebook).
